@@ -15,12 +15,26 @@
 
 /* Audio and Video Player Styles */
 
+video,
 audio {
     box-shadow: rgb(51, 51, 51) 8px 8px 15px;
     display: block;
     margin: 10px auto;
     width: 90%;
-    border-radius: 25px;
+}
+
+audio {
+    border-radius: 26px;
 }
 
 /* Track Styles */
+::cue {
+    background: rgba(0, 0, 0, 0.3);
+    color: orange;
+    font: 1.2em serif;
+}
+
+::cue(.Main) {
+    text-shadow: black 3px 3px 0px;
+    font: 2.5em serif;
+}
